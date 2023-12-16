@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include screen($sm) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.fa-solid{
+    color: $light-gray-7;
+    font-size: 2rem;
+    font-weight: 700;
+}

@@ -1,0 +1,26 @@
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/sidebar";
+@import "layout/main";
+
+@import "components/button";
+
+@import "pages/home";
+
+// importing core styling file
+@import "../scss/fontawesome.scss";
+
+// our project needs Solid + Brands
+@import "../scss/solid.scss";
+@import "../scss/brands.scss";

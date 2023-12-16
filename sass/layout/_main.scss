@@ -1,0 +1,22 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: $light-gray-1;
+  height: 80vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: $light-gray-2;
+    height: 5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+  }
+}

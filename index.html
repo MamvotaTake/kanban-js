@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="./scss/fontawesome.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <nav class="navigation p-1">
+        <div class="navigation__left">
+            <div class="navigation__left-logo space-x-4">
+                <i class="navigation__left-icon fa-solid fa-bars"></i>
+                <img src="/img/kanban-logo.png" alt="" srcset="">
+            </div>
+            <ul class="navigation__left-list px-20 space-x-18">
+                <li class="navigation__item"><a href="#" class="navigation__left-link">Your work</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__left-link">Projects</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__left-link">Filters</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__left-link">Dashboards</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__left-link">People</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__left-link">Apps</a></li>
+                <button class="btn btn-primary">Create</button>
+            </ul>
+        </div>
+        <div class="navigation__right space-x-10">
+            <div class="navigation__right-search">
+                <input type="text" class="navigation__right-search-input ">
+                <i class="navigation__right-search-icon fa-solid fa-search right-3.5 top-3"></i>
+            </div>
+            <div class="navigation__right-profile space-x-10">
+                <i class="navigation__right-icon fa-solid fa-bell"></i>
+                <i class="navigation__right-icon fa-solid fa-circle-info"></i>
+                <i class="navigation__right-icon fa-solid fa-user-gear"></i>
+                <img src="/img/take01.png" alt="" class="navigation__right-profile-img">
+            </div>
+        </div>
+    </nav>
+
+    <main class="main__section">
+        <div class="main__section-sidebar-wrapper p-10">
+            <div class="main__section-sidebar__logo">
+                <i  class="main__section-sidebar__logo-icon fa-solid fa-at"></i>
+                <span class="main__section-sidebar__logo-text">
+                    Product Web
+                    <span class="main__section-sidebar__logo-text-subtext">Classic software project</span>
+                </span>
+
+            </div>
+            <div class="main__section-sidebar__item">
+                <ul class="main__section-sidebar__item-links space-y-10 mt-10">
+                    <li class="main__section-sidebar__item-links-link">
+                        <a href="#" class="" >
+                            <i class="main__section-sidebar__links-1st-icon fa-solid fa-newspaper"></i>
+                            <span class="main__section-sidebar__links-1st-text">Backlog</span>
+                        </a>
+                    </li>
+
+                    <li class="main__section-sidebar__item-links-link">
+                        <a href="#" >
+                            <i class="main__section-sidebar__links-1st-icon fa-solid fa-chart-simple"></i>
+                            <span class="main__section-sidebar__links-1st-text">Active sprints</span>
+                        </a>
+                    </li>
+                    <li class="main__section-sidebar__item-links-link">
+                        <a href="#" >
+                            <i class="main__section-sidebar__links-1st-icon fa-solid fa-chart-line"></i>
+                            <span class="main__section-sidebar__links-1st-text">Reports</span>
+                        </a>
+                    </li>
+                    <li class="main__section-sidebar__item-links-link">
+                        <a href="#" >
+                            <i class="main__section-sidebar__links-1st-icon fa-solid fa-history"></i>
+                            <span class="main__section-sidebar__links-1st-text">Issues</span>
+                        </a>
+                    </li>
+                    <li class="main__section-sidebar__item-links-link">
+                        <a href="#" >
+                            <i class="main__section-sidebar__links-1st-icon fa-solid fa-puzzle-piece"></i>
+                            <span class="main__section-sidebar__links-1st-text">Components</span>
+                        </a>
+                    </li>
+                    <li class="main__section-sidebar__item-links-link">
+                        <a href="#" >
+                            <i class="main__section-sidebar__links-1st-icon fa-solid fa-code"></i>
+                            <span class="main__section-sidebar__links-1st-text">Code</span>
+                        </a>
+                    </li>
+                    <li class="main__section-sidebar__item-links-link">
+                        <a href="#" >
+                            <i class="main__section-sidebar__links-1st-icon fa-solid fa-copy"></i>
+                            <span class="main__section-sidebar__links-1st-text">Projects</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main__section-content p-10">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__header">
+                            Todo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__header">
+                            In Progress
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__header">
+                            Done
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
