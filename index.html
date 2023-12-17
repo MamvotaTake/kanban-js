@@ -23,7 +23,7 @@
                 <li class="navigation__item"><a href="#" class="navigation__left-link">Dashboards</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__left-link">People</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__left-link">Apps</a></li>
-                <button class="btn btn-primary">Create</button>
+                <a href="#popup-form" class="btn btn-primary">Create</a>
             </ul>
         </div>
         <div class="navigation__right space-x-10">
@@ -100,31 +100,186 @@
         </div>
 
         <div class="main__section-content p-10">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    Your browser is not supported
+                </video>
+            </div>
             <div class="row">
-                <div class="col-1-of-3">
+                <div class="col-1-of-4">
                     <div class="card">
-                        <div class="card__header">
-                            Todo
+                        <div class="card__header px-3">
+                            Tasks
+                        </div>
+                        <div class="card__info py-6 m-6 px-3 space-y-5 " draggable=true>
+                            <p>As a translator, I want integrate Crowdin webhook to notify translators about changed strings</p>
+                            <div class="card__info-footer  space-y-3">
+                                <span class="card__info-footer-status">Refactoring</span>
+                                <div class="card__info-footer__more py-3 ">
+                                    <div class="card__info-footer__more-left space-x-4">
+                                        <i class="card__info-footer__more-icon fa-solid fa-book-bookmark"></i>
+                                        <i class="card__info-footer__more-icon-1 fa-solid fa-circle-chevron-up"></i>
+                                        <span class="card__info-footer__more-tasks px-0.5">2</span>
+                                    </div>
+                                    <div class="card__info-footer__more-right space-x-4">
+                                        <p>FC – 7</p>
+                                        <img src="/img/take01.png" alt="" class="card__info-footer__more-right-img">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__info py-6 m-6 px-3 space-y-5" draggable=true>
+                            <p>As a user, I want to see actual over usage price for next download</p>
+                            <div class="card__info-footer  space-y-3">
+<!--                                <span class="card__info-footer-status">Refactoring</span>-->
+                                <div class="card__info-footer__more py-3 ">
+                                    <div class="card__info-footer__more-left space-x-4">
+                                        <i class="card__info-footer__more-icon fa-solid fa-book-bookmark"></i>
+                                        <i class="card__info-footer__more-icon-2 fa-solid fa-circle-info"></i>
+                                        <span class="card__info-footer__more-tasks px-0.5">1</span>
+                                    </div>
+                                    <div class="card__info-footer__more-right space-x-4">
+                                        <p>BC – 14</p>
+                                        <img src="/img/take01.png" alt="" class="card__info-footer__more-right-img">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div><div class="card__info py-6 m-6 px-3 space-y-5">
+                            <p>As a team license owner, I want to use multiplied limits</p>
+                            <div class="card__info-footer  space-y-3">
+<!--                                <span class="card__info-footer-status">Refactoring</span>-->
+                                <div class="card__info-footer__more py-3 ">
+                                    <div class="card__info-footer__more-left space-x-4">
+                                        <i class="card__info-footer__more-icon-1 fa-solid fa-flag"></i>
+                                        <i class="card__info-footer__more-icon-1 fa-solid fa-circle-chevron-up"></i>
+                                        <span class="card__info-footer__more-tasks px-0.5">3</span>
+                                    </div>
+                                    <div class="card__info-footer__more-right space-x-4">
+                                        <p>FC – 7</p>
+                                        <img src="/img/take01.png" alt="" class="card__info-footer__more-right-img">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-1-of-3">
+                <div class="col-1-of-4">
                     <div class="card">
-                        <div class="card__header">
+                        <div class="card__header  px-3">
                             In Progress
+                        </div>
+                        <div class="card__info py-6 m-6 px-3 space-y-5">
+                            <p>As an external contributor, I want to be able to see status of uploaded materials</p>
+                            <div class="card__info-footer  space-y-3">
+                                <span class="card__info-footer-status">Refactoring</span>
+                                <div class="card__info-footer__more py-3 ">
+                                    <div class="card__info-footer__more-left space-x-4">
+                                        <i class="card__info-footer__more-icon fa-solid fa-book-bookmark"></i>
+                                        <i class="card__info-footer__more-icon-1 fa-solid fa-circle-chevron-down"></i>
+                                        <span class="card__info-footer__more-tasks px-0.5">3</span>
+                                    </div>
+                                    <div class="card__info-footer__more-right space-x-4">
+                                        <p>MAR – 14</p>
+                                        <img src="/img/take01.png" alt="" class="card__info-footer__more-right-img">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-1-of-3">
+                <div class="col-1-of-4">
                     <div class="card">
-                        <div class="card__header">
+                        <div class="card__header  px-3">
+                            Hold
+                        </div>
+                        <div class="card__info py-6 m-6 px-3 space-y-5">
+                            <p>As a translator, I want integrate Crowdin webhook to notify translators about changed strings</p>
+                            <div class="card__info-footer  space-y-3">
+                                <span class="card__info-footer-status">Refactoring</span>
+                                <div class="card__info-footer__more py-3 ">
+                                    <div class="card__info-footer__more-left space-x-4">
+                                        <i class="card__info-footer__more-icon fa-solid fa-book-bookmark"></i>
+                                        <i class="card__info-footer__more-icon-1 fa-solid fa-circle-chevron-up"></i>
+                                        <span class="card__info-footer__more-tasks px-0.5">2</span>
+                                    </div>
+                                    <div class="card__info-footer__more-right space-x-4">
+                                        <p>FC – 7</p>
+                                        <img src="/img/take01.png" alt="" class="card__info-footer__more-right-img">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__info py-6 m-6 px-3 space-y-5">
+                            <p>As a translator, I want integrate Crowdin webhook to notify translators about changed strings</p>
+                            <div class="card__info-footer  space-y-3">
+                                <span class="card__info-footer-status">Refactoring</span>
+                                <div class="card__info-footer__more py-3 ">
+                                    <div class="card__info-footer__more-left space-x-4">
+                                        <i class="card__info-footer__more-icon fa-solid fa-book-bookmark"></i>
+                                        <i class="card__info-footer__more-icon-1 fa-solid fa-circle-chevron-up"></i>
+                                        <span class="card__info-footer__more-tasks px-0.5">2</span>
+                                    </div>
+                                    <div class="card__info-footer__more-right space-x-4">
+                                        <p>FC – 7</p>
+                                        <img src="/img/take01.png" alt="" class="card__info-footer__more-right-img">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="card">
+                        <div class="card__header  px-3">
                             Done
                         </div>
+                        <div class="card__info py-6 m-6 px-3 space-y-5">
+                            <p>As a translator, I want integrate Crowdin webhook to notify translators about changed strings</p>
+                            <div class="card__info-footer  space-y-3">
+                                <span class="card__info-footer-status">Refactoring</span>
+                                <div class="card__info-footer__more py-3 ">
+                                    <div class="card__info-footer__more-left space-x-4">
+                                        <i class="card__info-footer__more-icon fa-solid fa-book-bookmark"></i>
+                                        <i class="card__info-footer__more-icon-1 fa-solid fa-circle-chevron-up"></i>
+                                        <span class="card__info-footer__more-tasks px-0.5">2</span>
+                                    </div>
+                                    <div class="card__info-footer__more-right space-x-4">
+                                        <p>FC – 7</p>
+                                        <img src="/img/take01.png" alt="" class="card__info-footer__more-right-img">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
+
+    <section class="popup__form" id="popup-form">
+        <form action="" class="popup-form-task">
+
+        </form>
+    </section>
 </body>
 </html>

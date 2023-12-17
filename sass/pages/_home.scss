@@ -1,16 +1,16 @@
 .main__section{
   display: grid;
-  grid-template-columns: .8fr 5fr;
+  grid-template-columns: .9fr 5fr;
   gap: 2em;
 
   &-sidebar-wrapper{
-    height: 90vh;
-    background-color: $light-gray-2;
+    height: 85vh;
+    background-color: $light-gray-1;
     flex-shrink: 0;
   }
 
   &-content{
-    height: 90vh;
-    background-color: $color-white;
+    height: 85vh;
+    //background-color: $color-white;
   }
 }

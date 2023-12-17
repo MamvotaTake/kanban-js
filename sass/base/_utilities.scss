@@ -20,6 +20,11 @@
     margin-top: #{$space * 0.25}rem;
   }
 
+  .mb-#{escape-number($space)} {
+    margin-bottom: #{$space * 0.25}rem;
+  }
+
+
   .m-#{escape-number($space)} {
     margin: #{$space * 0.25}rem;
   }
